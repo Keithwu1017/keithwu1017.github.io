@@ -1,0 +1,8 @@
+FROM nginx:1.27-alpine
+
+COPY index.html /usr/share/nginx/html/index.html
+COPY style.css /usr/share/nginx/html/style.css
+COPY script.js /usr/share/nginx/html/script.js
+COPY avatar.svg /usr/share/nginx/html/avatar.svg
+
+EXPOSE 80

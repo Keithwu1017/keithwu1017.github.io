@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="一頁式個人自我介紹網站，包含自我介紹、興趣專長與外部連結。"
+    />
+    <title>你的名字｜個人網站</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9C%A6%3C/text%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="回到首頁">YOUR<span>SPACE</span></a>
+      <nav aria-label="主要導覽">
+        <a href="#about">關於我</a>
+        <a href="#interests">興趣專長</a>
+        <a href="#contact">聯絡方式</a>
+      </nav>
+      <button class="theme-button" id="theme-button" type="button" aria-label="切換深色或淺色模式" aria-pressed="false">
+        <span aria-hidden="true">☀</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">HELLO, WORLD!</p>
+          <h1 id="hero-title">嗨，我是<span>你的名字</span></h1>
+          <p class="hero-intro">
+            我是一位喜歡探索新事物的學習者，正在練習把想法變成清楚、好用又好看的網頁。
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#about">認識我</a>
+            <a class="button button-secondary" href="#contact">找到我</a>
+          </div>
+        </div>
+
+        <div class="portrait-wrap" aria-label="個人代表圖片">
+          <div class="portrait-glow" aria-hidden="true"></div>
+          <img src="avatar.svg" alt="你的名字的代表圖片；請替換成自己的照片" />
+          <p><span aria-hidden="true"></span>保持好奇，持續創作</p>
+        </div>
+      </section>
+
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p class="eyebrow">01 / ABOUT</p>
+          <h2 id="about-title">關於我</h2>
+        </div>
+        <div class="about-grid">
+          <article class="card statement-card">
+            <p class="quote-mark" aria-hidden="true">“</p>
+            <p>
+              我喜歡從生活裡找題目，再用設計與程式解決問題。我的目標是持續累積作品，
+              並在每一次實作中學會更好的溝通與思考方式。
+            </p>
+          </article>
+          <dl class="facts card">
+            <div><dt>目前身分</dt><dd>學生／網頁開發初學者</dd></div>
+            <div><dt>所在地</dt><dd>台灣</dd></div>
+            <div><dt>正在學習</dt><dd>HTML、CSS、JavaScript</dd></div>
+            <div><dt>近期目標</dt><dd>完成並發布第一個個人網站</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="section" id="interests" aria-labelledby="interests-title">
+        <div class="section-heading">
+          <p class="eyebrow">02 / INTERESTS</p>
+          <h2 id="interests-title">興趣與專長</h2>
+        </div>
+        <div class="interest-grid">
+          <article class="interest-card">
+            <span class="interest-number">01</span>
+            <span class="interest-icon" aria-hidden="true">⌘</span>
+            <h3>程式設計</h3>
+            <p>把複雜問題拆成小步驟，享受從零到一完成作品的過程。</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          </article>
+          <article class="interest-card">
+            <span class="interest-number">02</span>
+            <span class="interest-icon" aria-hidden="true">◉</span>
+            <h3>影像紀錄</h3>
+            <p>用照片保存日常觀察，也從構圖、光線與色彩中培養美感。</p>
+            <div class="tags"><span>攝影</span><span>旅行</span></div>
+          </article>
+          <article class="interest-card">
+            <span class="interest-number">03</span>
+            <span class="interest-icon" aria-hidden="true">♫</span>
+            <h3>音樂探索</h3>
+            <p>透過不同曲風認識文化，讓音樂成為學習與創作時的好夥伴。</p>
+            <div class="tags"><span>音樂</span><span>閱讀</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">03 / CONNECT</p>
+          <h2 id="contact-title">一起保持聯絡</h2>
+          <p>這些按鈕目前連到平台首頁；交作業前請換成你自己的帳號網址。</p>
+        </div>
+        <div class="social-links" aria-label="外部連結">
+          <a href="https://github.com/" target="_blank" rel="noreferrer">
+            <span>GitHub</span><span aria-hidden="true">↗</span>
+          </a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+            <span>Instagram</span><span aria-hidden="true">↗</span>
+          </a>
+          <a href="https://www.youtube.com/" target="_blank" rel="noreferrer">
+            <span>YouTube</span><span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="current-year">2026</span> 你的名字</p>
+      <a href="#home">回到頂端 ↑</a>
+    </footer>
+  </body>
+</html>
