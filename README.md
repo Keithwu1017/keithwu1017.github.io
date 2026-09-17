@@ -17,12 +17,13 @@
 | `style.css` | 版面、色彩、響應式設計 |
 | `script.js` | 頁籤預覽、鍵盤操作、主題切換 |
 | `profile-photo.jpg` | 首頁個人照片 |
-| `Ta-I_Wu_Resume.pdf` | 提供訪客查看的完整履歷 |
+| `resume.html`、`resume-preview.png` | 跨瀏覽器相容的履歷預覽頁 |
+| `Ta-I_Wu_Resume.pdf` | 提供訪客開啟或下載的原始履歷 |
 | `Dockerfile`、`compose.yaml` | Docker 與 Jupyter 練習環境 |
 
 ## 履歷入口
 
-網站在三個位置提供履歷連結：頁首的 `RESUME`、個人簡介下方的「查看完整履歷」，以及「與我聯絡」頁籤中的 `Resume PDF`。三處都會在新分頁開啟 `Ta-I_Wu_Resume.pdf`。
+網站在三個位置提供履歷連結：頁首的 `RESUME`、個人簡介下方的 `View Resume`，以及 `Contact` 頁籤中的 `Resume`。三處都會開啟 `resume.html`，訪客可在預覽頁閱讀履歷，或開啟／下載原始 PDF。
 
 若要更新履歷，只要用新版 PDF 覆蓋同名檔案即可，不必修改 HTML。
 

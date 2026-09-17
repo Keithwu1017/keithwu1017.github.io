@@ -6,5 +6,7 @@ COPY script.js /usr/share/nginx/html/script.js
 COPY avatar.svg /usr/share/nginx/html/avatar.svg
 COPY profile-photo.jpg /usr/share/nginx/html/profile-photo.jpg
 COPY Ta-I_Wu_Resume.pdf /usr/share/nginx/html/Ta-I_Wu_Resume.pdf
+COPY resume.html /usr/share/nginx/html/resume.html
+COPY resume-preview.png /usr/share/nginx/html/resume-preview.png
 
 EXPOSE 80
